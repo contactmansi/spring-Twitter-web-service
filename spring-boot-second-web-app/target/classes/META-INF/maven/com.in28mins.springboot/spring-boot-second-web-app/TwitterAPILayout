@@ -1,0 +1,37 @@
+Create User
+Get User
+Create user ka tweet
+
+One that user can post tweet
+One that he's able to see all that he has tweeted
+One that he can follow others and see whom he's following
+Other that he's able to see all the tweets by the ones he's following in chronological order
+
+One that user can post tweet
+//Post a tweet - POST/users/{userId}/tweet
+
+One that he's able to see all that he has tweeted
+//Retrieve all tweets - GET/users/{userId}/tweets
+
+One that he can follow others
+//Follow other users - POST/users/{userid}/followUser/{userId}
+
+see whom he's following
+//Retrieve all followers - GET/users/{user id}/followingUsers
+
+he's able to see all the tweets by the ones he's following in chronological order
+//Retrieve all tweets of all following users - GET/users/{user id}/wall
+GET/users/{user id}/followingUsers/tweets
+
+Keep H2 as database use a map - 
+
+TWEET
+	-tweet id
+	-description
+	-timestamp
+	
+SERVICE CLASS
+	-post a tweet by a user - POST/users/{userId}/tweets
+		-description
+		-timestamp
+
