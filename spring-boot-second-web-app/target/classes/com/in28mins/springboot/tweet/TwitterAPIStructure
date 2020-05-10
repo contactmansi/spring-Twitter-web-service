@@ -1,0 +1,34 @@
+USER
+	-User Id
+	-List of Tweets
+	-List of Users followed
+	
+USER CONTROLLER LAYOUT
+
+	//Get all users - GetMapping("/users")
+		
+	//Get one user - GetMapping("/users/{id}")
+	
+	//ADD NEW USER - GetMapping("/users/add") 
+
+
+TWEET
+	-tweet id
+	-description
+	-timestamp - @JsonIgnore - to hide in the response
+
+TWEET CONTROLLER LAYOUT
+
+	//User can post  a tweet - POST/users/{userId}/tweet
+	
+	
+	//User can retrieve his own tweets - GET/users/{userId}/tweets
+	
+	
+	//User can follow others - POST/users/{userid}/follow/{userId}
+	
+	
+	//User can Retrieve all followed Users - GET/users/{userId}/following
+	
+	
+	//User can Retrieve all the tweets by the ones he's following in chronological order - GET/users/{userId}/wall
